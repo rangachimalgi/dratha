@@ -1,0 +1,83 @@
+.featuresContainer {
+    display: flex; /* This will enable flexbox layout */
+    flex-direction: row; /* This will align children (cards) in a row */
+    justify-content: center; /* This will center the cards in the container */
+    align-items: center; /* This will vertically align the cards in the middle */
+    flex-wrap: wrap; /* This will allow cards to wrap onto the next line on smaller screens */
+    gap: 1rem; /* This adds space between the cards */
+    padding: 1rem; /* This adds padding inside the container */
+  }
+  
+  .card {
+    flex: 1; /* This will allow cards to grow and fill the space */
+    max-width: calc(33.333% - 1rem); /* This ensures 3 cards fit in a row with the gap */
+    margin: 0.5rem; /* This adds margin around each card */
+    background-color: #fff;
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 300px; /* adjust the width of the cards */
+    margin: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .cardIcon {
+    margin-bottom: 20px;
+  }
+  
+  .cardTitle {
+    margin-bottom: 10px;
+  }
+  
+  .cardDescription {
+    color: #666; /* Just an example color */
+  }
+
+
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjust the minmax values to fit your design */
+    gap: 1rem; /* Space between items */
+    padding: 1rem; /* Padding around the grid */
+  }
+  
+  .service-card {
+    background: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .service-image {
+    width: 100%;
+    height: auto; /* Adjust the height as needed, or use a specific height */
+  }
+  
+  .service-title {
+    font-size: 1.2rem; /* Adjust font-size as needed */
+    color: #333; /* Adjust the color as needed */
+    padding: 0.5rem;
+    margin: 0;
+    text-align: center; /* Center the title text */
+  }
+  
+  .service-price {
+    font-size: 1rem; /* Adjust font-size as needed */
+    color: #666; /* Adjust the color as needed */
+    padding: 0.5rem;
+    margin: 0;
+    text-align: center; /* Center the price text */
+    background-color: #f8f8f8; /* Light grey background for the price */
+  }
+  
+  

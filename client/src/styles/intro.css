@@ -1,0 +1,31 @@
+.icon-menu-container {
+    display: flex;
+    justify-content: space-around; /* This will space your menu items evenly */
+    align-items: center; /* This will center them vertically */
+    width: 100%; /* Use the full width of the container */
+    padding: 20px 0; /* Add some padding at the top and bottom */
+}
+
+.icon-menu-item {
+    display: flex;
+    flex-direction: column; /* Stack the icon and text on top of each other */
+    align-items: center; /* Center align the content */
+    cursor: pointer; /* Changes the cursor to indicate it's clickable */
+}
+
+.icon-menu-item img {
+    /* You can set a specific size for your icons */
+    width: 50px; /* Example size, adjust as needed */
+    height: auto;
+    margin-bottom: 8px; /* Space between the icon and text */
+}
+
+.icon-menu-item p {
+    font-size: 16px; /* Example size, adjust as needed */
+    text-align: center; /* Ensure the text is centered below the icon */
+}
+
+.icon-menu-item:hover {
+    transform: scale(1.1); /* Scales the icon up to 110% of its original size */
+    color: #ff69b4; /* Change the color on hover; choose a color that fits your design */
+}

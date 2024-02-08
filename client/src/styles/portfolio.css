@@ -1,0 +1,50 @@
+.trending-container {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff; /* or any other color you prefer */
+  }
+  
+  .trending-container h2 {
+    color: #000; /* Title color */
+    margin-bottom: 10px;
+  }
+  
+  .trending-container p {
+    color: #666; /* Paragraph color */
+    margin-bottom: 20px;
+  }
+  
+  .trend-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .trend-card {
+    background-color: #f9f9f9; /* Card background color */
+    border-radius: 10px; /* Rounded corners for the card */
+    overflow: hidden; /* Ensures the content fits within the card */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Card shadow */
+    transition: transform 0.3s ease-in-out; /* Smooth transition for hover effect */
+  }
+  
+  .trend-card:hover {
+    transform: scale(1.05); /* Slightly scale up the card on hover */
+  }
+  
+  .trend-card img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .trend-card h3 {
+    color: #000; /* Title color inside the card */
+    padding: 10px; /* Padding around the title */
+  }
+  
+  .trend-card p {
+    color: #E91E63; /* Price color inside the card */
+    padding: 0 10px 10px; /* Padding around the price */
+  }
+  
